@@ -6,10 +6,10 @@ import SocialBox from "./components/atoms/socialBox";
 export default function Home() {
   return (
     <div
-      className="h-screen flex flex-col px-4 
-        bg-whiteBG justify-center items-center border-2 border-black"
+      className="h-screen w-full flex flex-col px-4 
+        bg-whiteBG justify-center items-center"
     >
-      <header className="h-max flex flex-col md:inline-flex justify-center md:justify-center items-center gap-10">
+      <header className="h-max flex flex-col md:inline-flex justify-center items-center gap-10">
         <section className=" flex flex-col justify-center items-center">
           <h1 className="font-bold text-5xl  text-black font-DancingScript flex text-center ">
             DAVID SANCHEZ
