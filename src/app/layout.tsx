@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex flex-col md:flex-row  w-screen h-screen">
+      <body className="flex flex-col md:flex-row w-screen h-max bg-whiteBG">
         <span>
           <Image
             src={David}
@@ -27,14 +27,11 @@ export default function RootLayout({
             className="absolute top-10 right-10"
           />
         </span>
-        <section className="w-1/4 ">
+        <section className="w-1/4 h-max">
           <Menu />
         </section>
-        <section className="flex flex-col  w-3/4 justify-between">
-          <section className="w-screen md:w-auto h-auto">{children}</section>
-          {/* <footer className="flex justify-center items-center bg-whiteBG w-screen bottom-0 left-0 absolute">
-            <h1>David Sanchez</h1>
-          </footer> */}
+        <section className="flex flex-col h-screen w-3/4 justify-between">
+          <section className="w-full h-full">{children}</section>
         </section>
       </body>
     </html>

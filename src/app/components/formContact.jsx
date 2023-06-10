@@ -23,10 +23,10 @@ const Form = () => {
 
 
   return (
-    <section className="py-12 flex flex-col items-center font-DancingScript justify-center w-3/4 md:w-2/3 gap-y-10 h-max rounded shadow-shadowTL border-[1px] border-gray-300">
+    <section className=" flex flex-col items-center font-DancingScript justify-center w-3/4 md:w-2/3 gap-y-10 h-max rounded shadow-shadowTL border-[1px] border-gray-300">
 
       <form onSubmit={handleSubmit}
-        className="flex flex-col gap-y-4 w-3/4 md:w-1/2 md:gap-x-4 center h-max">
+        className="flex flex-col gap-y-4 py-4 w-3/4 md:w-1/2 md:gap-x-4 h-max">
         <input
           required
           type="text"
@@ -63,7 +63,7 @@ const Form = () => {
           className="shadow-lightTL text-center flex  font-DancingScript text-purpleWidow focus:outline-none bg-whiteBG rounded"
           required />
         <button type="submit"
-          className="shadow-buttonShadow hover:scale-105 hover:bg-purpleWidow/50 hover:text-whiteBG duration-300 px-4 bg-gray-300 font-DancingScript transition-all py-2 text-gray-400 rounded"
+          className="shadow-buttonShadow hover:scale-105 hover:bg-purpleWidow/50 hover:text-whiteBG duration-00 px-4 bg-gray-300 font-DancingScript transition-all py-2 text-gray-400 rounded"
         >
           Contact
         </button>

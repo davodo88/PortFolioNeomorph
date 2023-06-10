@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div
       className="h-screen flex flex-col px-4 
-        bg-whiteBG justify-center items-center"
+        bg-whiteBG justify-center items-center border-2 border-black"
     >
       <header className="h-max flex flex-col md:inline-flex justify-center md:justify-center items-center gap-10">
         <section className=" flex flex-col justify-center items-center">

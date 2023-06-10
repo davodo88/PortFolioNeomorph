@@ -37,7 +37,7 @@ const NavBar = () => {
 
   return (
 
-    <section className="font-DancingScript">
+    <section className="font-DancingScript  w-auto">
       <Button handleNavbar={handleNavbar}
         icon={<FontAwesomeIcon icon={menu ? faXmark : faBars}
           className=""
@@ -48,7 +48,7 @@ const NavBar = () => {
           "absolute top-0 z-10 transition-all duration-1000 ease-in-out  bg-whiteBG/20 backdrop-blur text-black  w-1/2 h-96  rounded-br-xl",
           menu ? "left-0 h-screen w-full" : "-left-full  md:-left-[50%]")}
       >
-        <div className="flex flex-col text-gray-500  gap-16 py-16 px-5 md:hidden  justify-center items-center">
+        <div className="flex flex-col text-gray-500  gap-16 py-16  px-5 md:hidden  justify-center items-center">
           <div className="w-2/3 h-2/3">
             <ImagePort />
           </div>
@@ -73,11 +73,11 @@ const NavBar = () => {
           )}
         </div>
       </div>
-      <div className="hidden md:flex flex-col text-gray-600 px-2 gap-8 border-r-[1px] z-20 border-gray-700 bg-whiteBG h-screen min-h-full justify-evenly items-center">
+      <div className="hidden md:flex flex-col text-gray-600 px-2 gap-8 z-20 py-10 bg-whiteBGjustify-evenly items-center">
         <div className="w-2/3 h-1/3 flex items-center justify-center">
           <ImagePort />
         </div>
-        <ul className="flex flex-col gap-5 w-2/3 h-1/2 ">
+        <ul className="flex flex-col gap-y-4 w-2/3 ">
           {nav.map((navs, index) => {
             return (
               <li key={index}
