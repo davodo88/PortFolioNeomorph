@@ -7,12 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        DancingScript: ['Dancing Script', 'cursivo']
+      },
+      colors: {
+        'whiteBG': '#e0e0e0',
+        'purpleWidow': '#9955ff'
+      },
+      boxShadow: {
+        'lightTL': 'inset 10px 10px 20px #cbced1, inset -10px -10px 20px #ffffff',
+        'shadowTL': '10px 10px 20px #cbced1, -10px -10px 20px #ffffff',
+        'buttonShadow': '5px 5px 10px #b1b1b1, -5px -5px 10px #ffffff',
+        'imageShadow': '1px 1px 10px #9955ff, -1px -1px 10px #9955ff'
       },
     },
   },
   plugins: [],
 }
+
