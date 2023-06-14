@@ -3,11 +3,15 @@ import React, { useEffect, useState } from 'react'
 const DarkModeButton = () => {
 
 
+  const initialStateDarkMode = localStorage.getItem('theme') === 'dark'
 
 
 
-
-  const [darkMode, setDarkMode] = useState(localStorage.theme)
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      initialStateDarkMode || 'light'
+    }
+  })
 
 
   useEffect(() => {
