@@ -8,7 +8,7 @@ const DarkModeButton = () => {
 
   const [darkMode, setDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
-      initialStateDarkMode || 'light'
+      localStorage.getItem('theme') || 'light'
     }
   })
 
