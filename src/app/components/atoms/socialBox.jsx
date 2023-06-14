@@ -18,13 +18,14 @@ const rrss = [
 
 const SocialBox = () => {
   return (
-    <ul className=' shadow-buttonShadow border-black flex items-center justify-center px-6 py-4 gap-x-4 rounded'>
+    <ul className=' shadow-buttonShadow border-black flex items-center justify-center px-6 py-4 gap-x-4 rounded
+    dark:border-[1px] dark:border-[#b380ff]'>
       {
         rrss.map((red, index) => {
           return (
             <button key={index}
               className='p-2 shadow-buttonShadow hover:bg-[#b380ff] hover:scale-125
-              transition-all duration-300 rounded'>
+              transition-all duration-300 rounded dark:border-[1px] dark:border-[#b380ff]'>
               <a href={red.url}>
                 <Image src={red.icon}
                   width={20}

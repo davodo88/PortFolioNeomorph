@@ -23,10 +23,10 @@ const Form = () => {
 
 
   return (
-    <section className=" flex flex-col items-center font-DancingScript justify-center px-16 md:w-2/3 gap-y-10 h-max m-4 rounded shadow-shadowTL border-[1px] border-gray-300">
+    <section className=" flex flex-col items-center font-DancingScript justify-center p-4  w-full md:w-2/3 gap-y-10 h-max rounded shadow-shadowTL border-[1px] border-gray-300">
 
       <form onSubmit={handleSubmit}
-        className="flex flex-col gap-y-4 py-4 md:w-1/2 md:gap-x-4 h-max">
+        className="flex flex-col gap-y-4 py-4 w-full md:gap-x-4 h-max">
         <input
           required
           type="text"

@@ -10,27 +10,23 @@ export const metadata = {
   description: "My Portfolio",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex items-center justify-center bg-whiteBG">
+      <body className="flex items-center justify-center bg-whiteBG dark:bg-gray-800">
         <span>
           <Image
             src={David}
             width={100}
             height={100}
             alt="My Logo"
-            className="absolute top-10 right-10"
+            className="absolute top-8 right-8"
           />
         </span>
-        <section className="flex md:w-1/4 h-max">
+        <section className="flex md:w-1/4 h-max ">
           <Menu />
         </section>
-        <section className="flex flex-col justify-center items-center h-screen w-3/4">
+        <section className="flex flex-col justify-center items-center h-screen w-3/4 ">
           {children}
         </section>
       </body>
