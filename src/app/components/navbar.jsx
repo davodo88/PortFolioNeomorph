@@ -8,7 +8,7 @@ import DarModeButton from '../components/atoms/darkModeButton'
 import ImagePort from "./atoms/imagePort";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-
+import Link from "next/link";
 
 
 
@@ -34,7 +34,6 @@ const NavBar = () => {
 
   const handleNavbar = () => {
     menu ? setMenu(false) : setMenu(true)
-    console.log(menu)
   }
 
 
@@ -46,7 +45,6 @@ const NavBar = () => {
     <section className="font-DancingScript w-auto">
       <Button handleNavbar={handleNavbar}
         icon={<FontAwesomeIcon icon={menu ? faXmark : faBars}
-          className=""
         />}
       />
       <div
@@ -66,11 +64,11 @@ const NavBar = () => {
                     <button onClick={handleNavbar}
                       key={index}
                       className="px-8 py-2 shadow-lightTL rounded text-ceneter bg-whiteBG
-                      active:scale-105 transition-all duration-300 hover:scale-105 focus:bg-purpleWidow dark:shadow-darkShadow dark:bg-gray-800 dark:text-gray-400">
-                      <a href={navs.target}
+                      active:scale-105 transition-all duration-300 hover:scale-105 focus:bg-purpleWidow dark:shadow-darkShadow dark:bg-gray-800 dark:border-[1px] dark:border-purpleWidow dark:text-gray-400">
+                      <Link href={navs.target}
                         className="flex justify-center">
                         {navs.Title}
-                      </a>
+                      </Link>
                     </button>
                   )
                 })}
@@ -88,14 +86,16 @@ const NavBar = () => {
           {nav.map((navs, index) => {
             return (
               <li key={index}
-                className=" shadow-buttonShadow hover:text-white bg-whiteBG rounded text-center py-2 hover:bg-purpleWidow/50 hover:scale-105 transition-all duration-150 active:bg-purpleWidow focus:bg-purpleWidow flex justify-center items-center ">
-                <a href={navs.target}>
+                className=" shadow-buttonShadow hover:text-white bg-whiteBG rounded text-center py-2 hover:bg-purpleWidow/50 hover:scale-105 transition-all duration-150 active:bg-purpleWidow dark:border-purpleWidow focus:bg-purpleWidow flex justify-center items-center dark:shadow-darkShadow dark:bg-gray-800 dark:border-[1px] dark:text-gray-400">
+                <Link href={navs.target}>
                   {navs.Title}
-                </a>
+                </Link>
               </li>
             )
           })}
         </ul>
+        <DarModeButton />
+
       </div>
     </section>
   )

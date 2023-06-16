@@ -23,7 +23,7 @@ const Form = () => {
 
 
   return (
-    <section className=" flex flex-col items-center font-DancingScript justify-center p-4  w-full md:w-2/3 gap-y-10 h-max rounded shadow-shadowTL border-[1px] border-gray-300">
+    <section className=" flex flex-col items-center font-DancingScript justify-center p-4  w-full md:w-2/3 gap-y-10 h-max rounded shadow-shadowTL border-[1px] border-gray-300 dark:border-purpleWidow dark:bg-gray-800 dark:shadow-darkShadow">
 
       <form onSubmit={handleSubmit}
         className="flex flex-col gap-y-4 py-4 w-full md:gap-x-4 h-max">
@@ -34,7 +34,8 @@ const Form = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Your Name"
-          className="flex py-2 shadow-buttonShadow font-DancingScript text-purpleWidow text-center focus:outline-none bg-whiteBG rounded"
+          className="flex py-2 shadow-buttonShadow font-DancingScript text-purpleWidow text-center focus:outline-none bg-whiteBG dark:bg-gray-800 rounded
+          dark:shadow-darkShadow"
         />
         <input
           required
@@ -43,7 +44,8 @@ const Form = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="words@example.com"
-          className="shadow-buttonShadow py-2 text-purpleWidow font-DancingScript text-center focus:outline-none bg-whiteBG rounded"
+          className="shadow-buttonShadow py-2 text-purpleWidow font-DancingScript text-center focus:outline-none bg-whiteBG rounded dark:bg-gray-800
+          dark:shadow-darkShadow"
         />
         <input
           required
@@ -53,17 +55,19 @@ const Form = () => {
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="Contact Phone"
-          className="shadow-buttonShadow text-center py-2 text-purpleWidow font-DancingScript focus:outline-none bg-whiteBG rounded"
+          className="shadow-buttonShadow text-center py-2 text-purpleWidow font-DancingScript focus:outline-none bg-whiteBG rounded
+          dark:shadow-darkShadow dark:bg-gray-800"
         />
         <textarea
           name="note"
           placeholder="Here your Idea.."
           value={note} rows="4"
           onChange={(e) => setNote(e.target.value)}
-          className="shadow-lightTL text-center flex  font-DancingScript text-purpleWidow focus:outline-none bg-whiteBG rounded"
+          className="shadow-lightTL text-center flex  font-DancingScript text-purpleWidow focus:outline-none bg-whiteBG dark:shadow-darkShadow rounded dark:bg-gray-800"
           required />
         <button type="submit"
-          className="shadow-buttonShadow hover:scale-105 hover:bg-purpleWidow/50 hover:text-whiteBG duration-00 px-4 bg-gray-300 font-DancingScript transition-all py-2 text-gray-400 rounded"
+          className="shadow-buttonShadow hover:scale-105 hover:bg-purpleWidow/50 hover:text-whiteBG duration-00 px-4 bg-gray-300 font-DancingScript transition-all py-2 text-gray-400 rounded
+          dark:shadow-darkShadow dark:bg-gray-800"
         >
           Contact
         </button>
