@@ -57,14 +57,14 @@ const NavBar = () => {
             <ImagePort />
           </div>
           {menu && (
-            <div className="flex flex-col w-2/3 ">
+            <div className="flex flex-col w-2/3 md:hidden">
               <ul className="flex flex-col  w-full gap-6">
                 {nav.map((navs, index) => {
                   return (
                     <button onClick={handleNavbar}
                       key={index}
                       className="px-8 py-2 shadow-lightTL rounded text-ceneter bg-whiteBG
-                      active:scale-105 transition-all duration-300 hover:scale-105 focus:bg-purpleWidow dark:shadow-darkShadow dark:bg-gray-800 dark:border-[1px] dark:border-purpleWidow dark:text-gray-400">
+                      active:scale-105 transition-all duration-300 hover:scale-105 focus:bg-purpleWidow dark:shadow-darkShadow border-[1px] dark:bg-gray-800  dark:border-purpleWidow dark:text-gray-400">
                       <Link href={navs.target}
                         className="flex justify-center">
                         {navs.Title}
@@ -78,7 +78,7 @@ const NavBar = () => {
           <DarModeButton />
         </div>
       </div>
-      <div className="hidden md:flex flex-col text-gray-600 px-2 gap-8 z-20 py-10 bg-whiteBGjustify-evenly items-center">
+      <div className="hidden md:flex flex-col text-gray-600 px-2 gap-8 z-20 py-10 bg-whiteBG dark:bg-gray-800 justify-evenly items-center">
         <div className="w-2/3 h-1/3 flex items-center justify-center">
           <ImagePort />
         </div>
@@ -86,7 +86,7 @@ const NavBar = () => {
           {nav.map((navs, index) => {
             return (
               <li key={index}
-                className=" shadow-buttonShadow hover:text-white bg-whiteBG rounded text-center py-2 hover:bg-purpleWidow/50 hover:scale-105 transition-all duration-150 active:bg-purpleWidow dark:border-purpleWidow focus:bg-purpleWidow flex justify-center items-center dark:shadow-darkShadow dark:bg-gray-800 dark:border-[1px] dark:text-gray-400">
+                className=" shadow-buttonShadow hover:text-white bg-whiteBG rounded text-center py-2 hover:bg-purpleWidow/50 hover:scale-105 transition-all duration-150 active:bg-purpleWidow dark:border-purpleWidow focus:bg-purpleWidow flex justify-center items-center dark:shadow-darkShadow dark:bg-gray-800 border-[1px] dark:text-gray-400">
                 <Link href={navs.target}>
                   {navs.Title}
                 </Link>

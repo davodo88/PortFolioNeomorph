@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex items-center justify-center bg-whiteBG dark:bg-gray-800">
+      <body className="flex items-center justify-center bg-whiteBG dark:bg-gray-800 ">
         <span>
           <Image
             src={David}
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
             className="absolute top-8 right-8"
           />
         </span>
-        <section className="flex md:w-1/4 h-max ">
+        <section className="flex md:w-1/4 h-max">
           <Menu />
         </section>
         <section className="flex flex-col justify-center items-center h-screen w-3/4 ">

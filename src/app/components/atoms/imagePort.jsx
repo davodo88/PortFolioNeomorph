@@ -10,7 +10,7 @@ const ImagePort = () => {
         width={500}
         height={500}
         alt="one picture from my self"
-        className="bg-gray-200 dark:bg-gray-800 dark:border-[2px] dark:border-[#9955ff] shadow-imageShadow rounded"
+        className="bg-gray-200 dark:bg-gray-800 border-[2px] dark:border-[#9955ff] shadow-imageShadow rounded"
       />
     </div>
   );
