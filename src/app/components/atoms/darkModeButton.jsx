@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useState } from 'react'
 import { classNames } from "../../../../utils/utils";
 
@@ -36,10 +38,10 @@ const DarkModeButton = () => {
     <div className='flex mx-auto w-32 h-8 justify-around items-center transition-transform duration-500 '>
       <FontAwesomeIcon icon={faSun}
         className={classNames('',
-          darkMode ? 'text-gray-300' : 'text-gray-800 ')}
+          darkMode ? 'text-purpleWidow' : 'text-gray-800 ')}
       />
       <button onClick={() => setDarkMode(!darkMode)}
-        className='w-[50px] h-8 border-[2px] rounded bg-gray-300 dark:bg-gray-700 shadow-buttonShadow
+        className='w-[50px] h-8 border-[2px] dark:border-purpleWidow rounded bg-gray-300 dark:bg-gray-700 shadow-buttonShadow
         dark:shadow-none'
       >
         <div className={classNames('flex w-full transition-all duration-1000',
@@ -49,7 +51,7 @@ const DarkModeButton = () => {
       </button>
       <FontAwesomeIcon icon={faMoon}
         className={classNames('',
-          darkMode ? 'text-gray-300' : 'text-gray-800 ')}
+          darkMode ? 'text-purpleWidow' : 'text-gray-800 ')}
       />
     </div>
   )

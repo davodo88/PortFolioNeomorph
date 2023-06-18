@@ -26,7 +26,7 @@ const Form = () => {
     <section className=" flex flex-col items-center font-DancingScript justify-center p-4  w-full md:w-2/3 gap-y-10 h-max rounded shadow-shadowTL border-[1px] border-gray-300 dark:border-purpleWidow dark:bg-gray-800 dark:shadow-darkShadow">
 
       <form onSubmit={handleSubmit}
-        className="flex flex-col gap-y-4 py-4 w-full md:gap-x-4 h-max">
+        className="flex flex-col gap-y-4 py-4 w-full md:gap-x-4 p-4 h-max">
         <input
           required
           type="text"

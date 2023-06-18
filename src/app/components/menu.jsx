@@ -4,7 +4,7 @@ import NavBar from './navbar'
 
 const Menu = () => {
   return (
-    <div className=''>
+    <div className='flex justify-center items-center w-full h-full'>
       <NavBar />
     </div>
   )

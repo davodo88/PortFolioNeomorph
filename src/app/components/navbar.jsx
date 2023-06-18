@@ -42,20 +42,17 @@ const NavBar = () => {
 
   return (
 
-    <section className="font-DancingScript w-auto">
+    <section className="font-DancingScript w-auto ">
       <Button handleNavbar={handleNavbar}
         icon={<FontAwesomeIcon icon={menu ? faXmark : faBars}
         />}
       />
-      <div
+      <div id="mobileNavBar"
         className={classNames(
-          "absolute top-0 z-10 transition-all duration-1000 ease-in-out  bg-whiteBG/20 backdrop-blur text-black  w-1/2 h-96  rounded-br-xl",
-          menu ? "left-0 h-screen w-full" : "-left-full  md:-left-[50%]")}
+          "absolute top-0 z-10 md:hidden transition-all duration-1000 ease-in-out  bg-whiteBG/20 backdrop-blur text-black rounded-br-xl flex items-center justify-center",
+          menu ? "left-0 h-screen w-full" : "-left-full  md:-left-[50%] h-screen w-screen")}
       >
-        <div className="flex flex-col text-gray-500  gap-16 py-16  px-5 md:hidden relative justify-center items-center">
-          <div className="w-2/3 h-2/3">
-            <ImagePort />
-          </div>
+        <div className="flex flex-col text-gray-500  gap-16 py-16 w-full px-5 md:hidden relative justify-center items-center">
           {menu && (
             <div className="flex flex-col w-2/3 md:hidden">
               <ul className="flex flex-col  w-full gap-6">
@@ -75,18 +72,16 @@ const NavBar = () => {
               </ul>
             </div>
           )}
-          <DarModeButton />
         </div>
       </div>
-      <div className="hidden md:flex flex-col text-gray-600 px-2 gap-8 z-20 py-10 bg-whiteBG dark:bg-gray-800 justify-evenly items-center">
-        <div className="w-2/3 h-1/3 flex items-center justify-center">
-          <ImagePort />
-        </div>
-        <ul className="flex flex-col gap-y-4 w-2/3 ">
+      <div id="mdNavBar"
+        className="hidden md:flex flex-col w-full text-gray-600 px-2 gap-8 z-20 py-10 bg-whiteBG dark:bg-gray-800 justify-evenly items-center ">
+        <ul className="flex flex-col gap-y-4 ">
           {nav.map((navs, index) => {
             return (
               <li key={index}
-                className=" shadow-buttonShadow hover:text-white bg-whiteBG rounded text-center py-2 hover:bg-purpleWidow/50 hover:scale-105 transition-all duration-150 active:bg-purpleWidow dark:border-purpleWidow focus:bg-purpleWidow flex justify-center items-center dark:shadow-darkShadow dark:bg-gray-800 border-[1px] dark:text-gray-400">
+                className="flex justify-center items-center
+                w-48 shadow-buttonShadow hover:text-white bg-whiteBG rounded text-center py-2 hover:bg-purpleWidow/50 hover:scale-105 transition-all duration-150 active:bg-purpleWidow dark:border-purpleWidow focus:bg-purpleWidow  dark:shadow-darkShadow dark:bg-gray-800 border-[1px] dark:text-gray-400">
                 <Link href={navs.target}>
                   {navs.Title}
                 </Link>
@@ -94,8 +89,6 @@ const NavBar = () => {
             )
           })}
         </ul>
-        <DarModeButton />
-
       </div>
     </section>
   )

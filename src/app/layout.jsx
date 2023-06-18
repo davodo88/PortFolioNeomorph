@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import Menu from "./components/menu";
+import DarkModeButton from "./components/atoms/darkModeButton";
 
 import Image from "next/image";
 import David from "../images/DavidLogoMorado.png";
@@ -13,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex items-center justify-center bg-whiteBG dark:bg-gray-800 ">
+      <body className="relative flex items-center h-full py-12 justify-center bg-whiteBG dark:bg-gray-800 ">
+        <div className="absolute bottom-5 left-[1/2]">
+          <DarkModeButton />
+        </div>
         <span>
           <Image
             src={David}
@@ -23,10 +27,10 @@ export default function RootLayout({ children }) {
             className="absolute top-8 right-8"
           />
         </span>
-        <section className="flex md:w-1/4 h-max">
+        <section className="flex justify-center items-stretch md:w-1/4 h-full">
           <Menu />
         </section>
-        <section className="flex flex-col justify-center items-center h-screen w-3/4 ">
+        <section className="flex flex-col justify-center items-center h-full w-3/4 ">
           {children}
         </section>
       </body>
