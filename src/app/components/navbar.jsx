@@ -75,7 +75,7 @@ const NavBar = () => {
         </div>
       </div>
       <div id="mdNavBar"
-        className="hidden md:flex flex-col w-full text-gray-600 px-2 gap-8 z-20 py-10 bg-whiteBG dark:bg-gray-800 justify-evenly items-center ">
+        className="hidden md:flex flex-col w-full text-gray-600 px-2 gap-8 z-50 py-10 bg-whiteBG dark:bg-gray-800 justify-evenly items-center ">
         <ul className="flex flex-col gap-y-4 ">
           {nav.map((navs, index) => {
             return (

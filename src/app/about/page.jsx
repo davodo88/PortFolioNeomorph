@@ -2,16 +2,17 @@ import React from 'react'
 import Image from 'next/image'
 
 import David from '../../images/David.jpg'
-import SocialBox from '../components/atoms/socialBox'
+import SkillsBox from '../components/atoms/skillsBox'
 
 
 const About = () => {
   return (
     <section className='flex flex-col w-full h-full px-4 py-16 gap-5 justify-center items-center bg-whiteBG dark:bg-gray-800 dark:text-whiteBG '>
-      <div className='flex flex-col group border-2 border-gray-300 dark:border-purpleWidow rounded shadow-buttonShadow dark:shadow-darkShadow md:inline-flex justify-end relative w-ful h-max md:w-2/3 md:h-96
+      <div className='flex flex-col group 
+        dark:border-[#b380ff] dark:shadow-darkShadow rounded md:inline-flex justify-end relative w-ful h-max md:w-2/3 md:h-96 border-[1px] border-gray-300 shadow-buttonShadow 
       '>
         <Image src={David} width={'full'} height={'full'} alt='another time of me'
-          className='rounded  z-10 w-full h-1/2 md:h-full md:absolute top-0 right-0  dark:md:shadow-darkShadow 
+          className='rounded   w-full h-1/2 md:h-full md:absolute top-0 right-0  dark:md:shadow-darkShadow 
           md:group-hover:h-1/2 md:group-hover:top-0  transition-all duration-500 object-cover'
         />
         <div className='flex flex-col bg-whiteBG dark:bg-gray-800 w-full h-1/2  p-6 gap-y-2 text-center'>
@@ -24,9 +25,9 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className='w-full h-max p-4 rounded border-[1px] border-gray-300 dark:border-purpleWidow '>
-        <h1>My Skills</h1>
-        <SocialBox />
+      <div className='w-full h-max flex flex-col p-4 rounded border-[1px] border-gray-300 dark:border-purpleWidow dark:shadow-darkShadow text-center font-DancingScript gap-y-5'>
+        <h1 className='font-DancingScript font-bold text-xl text-purpleWidow'>My Skills</h1>
+        <SkillsBox />
       </div>
     </section>
   )
