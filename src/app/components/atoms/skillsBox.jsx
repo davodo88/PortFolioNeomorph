@@ -8,7 +8,6 @@ import JS from '../../../images/JavaScriptLogo.png'
 import REACT from '../../../images/ReactLogo.png'
 import TAILWIND from '../../../images/TailwindLogo.png'
 import GitHub from '../../../../public/github.svg'
-import { library } from '@fortawesome/fontawesome-svg-core'
 
 
 const skill = [
@@ -30,7 +29,7 @@ const SkillsBox = () => {
         skill.map((red, index) => {
           return (
             <li key={index}
-              className='flex justify-between md:w-1/3 md:hover:w-3/4 p-2 pr-1 
+              className='flex m-auto md:w-1/3 md:hover:w-3/4 p-2 pr-1 
               transition-all duration-500 group overflow-hidden'>
               <Image
                 src={red.icon}
@@ -38,7 +37,7 @@ const SkillsBox = () => {
                 height={'auto'}
                 alt='logo technology'
                 loading='lazy'
-                className='p-2 w-20 h-20 m-auto md:m-0 shadow-buttonShadow bg-white  dark:bg-gray-800 hover:bg-[#b380ff] hover:scale-105
+                className='p-2 w-20 h-20 md:m-0 shadow-buttonShadow bg-white  dark:bg-gray-800 hover:bg-[#b380ff] hover:scale-105
               transition-all duration-300 rounded dark:shadow-darkShadow border-[1px] dark:border-[#b380ff] dark:text-whiteBG'
               />
               <span className='flex items-center text-justify mx-4 p-2 invisible md:group-hover:visible transition-all duration-1000'>{red.descrition}</span>

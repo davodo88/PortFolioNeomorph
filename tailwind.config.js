@@ -17,7 +17,7 @@ module.exports = {
       boxShadow: {
         'lightTL': 'inset 10px 10px 20px #cbced1, inset -10px -10px 20px #ffffff',
         'shadowTL': '10px 10px 20px #cbced1, -10px -10px 20px #ffffff',
-        'buttonShadow': '5px 5px 10px #b1b1b1, -5px -5px 10px #ffffff',
+        'buttonShadow': '5px 5px 10px #b1b1b1, -5px -5px 10px 1px #ffffff',
         'imageShadow': '1px 1px 10px #9955ff, -1px -1px 10px #9955ff',
         'darkShadow': '1px 1px 10px 1px #9910ff, -1px -1px 10px 1px #9910ff'
       },

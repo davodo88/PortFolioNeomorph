@@ -1,7 +1,8 @@
 "use client";
 
 
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
+import emailjs from '@emailjs/browser'
 
 
 
@@ -12,24 +13,37 @@ const Form = () => {
   const [phone, setPhone] = useState('')
   const [note, setNote] = useState('')
 
+  const form = useRef('')
+
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    emailjs.sendForm('davodoEmailForWork2023', 'FirstTemplate', form.current, '8Jqzmid2iVVZeoP9U')
+      .then((result) => {
+        console.log(result.text)
+      }, (error) => {
+        console.log(error.text)
+      })
+
     console.log(name, email, phone, note)
     setName('')
     setEmail('')
     setPhone('')
     setNote('')
+
+
   }
 
 
   return (
     <section className=" flex flex-col items-center font-DancingScript justify-center p-4  w-full md:w-2/3 gap-y-10 h-max rounded shadow-shadowTL border-[1px] border-gray-300 dark:border-purpleWidow dark:bg-gray-800 dark:shadow-darkShadow">
 
-      <form onSubmit={handleSubmit}
+      <form onSubmit={handleSubmit} ref={form}
         className="flex flex-col gap-y-4 py-4 w-full md:gap-x-4 p-4 h-max">
         <input
           required
           type="text"
+          name="from_name"
           label="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -40,6 +54,7 @@ const Form = () => {
         <input
           required
           type="text"
+          name="user_email"
           label="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -50,6 +65,7 @@ const Form = () => {
         <input
           required
           type='tel'
+          name="phone_contact"
           pattern="[0-9]{9}"
           label='Contact Phone'
           value={phone}
@@ -59,7 +75,7 @@ const Form = () => {
           dark:shadow-darkShadow dark:bg-gray-800"
         />
         <textarea
-          name="note"
+          name="message"
           placeholder="Here your Idea.."
           value={note} rows="4"
           onChange={(e) => setNote(e.target.value)}
