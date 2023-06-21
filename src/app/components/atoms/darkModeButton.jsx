@@ -8,6 +8,7 @@ import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 
 
+
 const DarkModeButton = () => {
 
 
@@ -36,23 +37,21 @@ const DarkModeButton = () => {
 
   return (
     <div className='flex mx-auto w-32 h-8 justify-around items-center transition-transform duration-500 '>
-      <FontAwesomeIcon icon={faSun}
-        className={classNames('',
-          darkMode ? 'text-purpleWidow' : 'text-gray-800 ')}
-      />
+
       <button onClick={() => setDarkMode(!darkMode)}
-        className='w-[50px] h-8 border-[2px] dark:border-purpleWidow rounded bg-gray-300 dark:bg-gray-700 shadow-buttonShadow
+        className='w-[50px] h-7  rounded-full bg-gray-300 dark:bg-gray-700 shadow-buttonShadow
         dark:shadow-none'
       >
-        <div className={classNames('flex w-full transition-all duration-1000',
+        <div className={classNames('flex w-full transition-all duration-500',
           darkMode ? 'translate-x-1/2' : 'justify-start')}>
-          <span className='bg-white w-1/2 h-6 rounded-full'>{''}</span>
+          <span className={classNames('transition-all diration-1000 w-1/2 h-6 rounded-full', darkMode ?
+            'bg-purpleWidow text-whiteBG ' : 'bg-white text-purpleWidow ')}>
+            <FontAwesomeIcon icon={darkMode ? faMoon : faSun}
+              className='transition-all duration-500' />
+          </span>
         </div>
       </button>
-      <FontAwesomeIcon icon={faMoon}
-        className={classNames('',
-          darkMode ? 'text-purpleWidow' : 'text-gray-800 ')}
-      />
+
     </div>
   )
 }

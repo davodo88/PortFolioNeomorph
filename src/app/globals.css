@@ -1,9 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 /* 
 #sectionHeader {
   background-image: url('../images/fondoneumorph.jpg');
   background-size: cover;
 } */
+
+input, textarea {
+  font-family: FontAwesome, "Nunito sans", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}

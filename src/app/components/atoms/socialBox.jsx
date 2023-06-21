@@ -20,14 +20,14 @@ const rrss = [
 
 const SocialBox = () => {
   return (
-    <ul className=' shadow-buttonShadow border-gray-300 flex items-center justify-center px-6 py-4 gap-x-4 rounded
-    border-[1px] dark:border-[#b380ff] dark:shadow-darkShadow'>
+    <ul className='  flex items-center justify-center px-6 py-4 gap-x-6 rounded
+  '>
       {
         rrss.map((red, index) => {
           return (
             <button key={index}
-              className='p-2 shadow-buttonShadow bg-white dark:bg-gray-800 hover:bg-[#b380ff] hover:scale-125
-              transition-all duration-300 rounded dark:shadow-darkShadow border-[1px] dark:border-[#b380ff] dark:text-whiteBG'>
+              className='p-2 shadow-buttonShadow bg-zinc-300  hover:bg-[#b893f0] hover:scale-125
+              transition-all duration-300 rounded dark:shadow-darkShadow  dark:border-[#b893f0] dark:text-[#b893f0]'>
               <Link href={red.url}>
                 <Image src={red.icon}
                   width={20}

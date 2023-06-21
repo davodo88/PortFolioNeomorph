@@ -23,14 +23,13 @@ const skill = [
 const SkillsBox = () => {
 
   return (
-    <ul className='h-max shadow-buttonShadow border-gray-300 grid grid-rows-3 md:grid-cols-2 items-center md:items-left grid-flow-col px-6 py-4 gap-4 rounded
-    border-[1px] dark:border-[#b380ff] dark:shadow-darkShadow'>
+    <ul className='h-max grid grid-rows-3 md:grid-cols-2 items-center md:items-left grid-flow-col px-6 py-4 gap-4'
+    >
       {
         skill.map((red, index) => {
           return (
             <li key={index}
-              className='flex m-auto md:w-1/3 md:hover:w-3/4 p-2 pr-1 
-              transition-all duration-500 group overflow-hidden'>
+              className='flex m-auto w-3/4 p-2 pr-1'>
               <Image
                 src={red.icon}
                 width={'auto'}
@@ -38,9 +37,9 @@ const SkillsBox = () => {
                 alt='logo technology'
                 loading='lazy'
                 className='p-2 w-20 h-20 md:m-0 shadow-buttonShadow bg-white  dark:bg-gray-800 hover:bg-[#b380ff] hover:scale-105
-              transition-all duration-300 rounded dark:shadow-darkShadow border-[1px] dark:border-[#b380ff] dark:text-whiteBG'
+              transition-all duration-300 rounded dark:shadow-darkShadow  dark:text-whiteBG'
               />
-              <span className='flex items-center text-justify mx-4 p-2 invisible md:group-hover:visible transition-all duration-1000'>{red.descrition}</span>
+              <span className='flex items-center text-justify mx-4 p-2 visible transition-all duration-1000'>{red.descrition}</span>
             </li>
           )
         })

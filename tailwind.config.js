@@ -8,7 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        DancingScript: ['Dancing Script', 'cursivo']
+        DancingScript: ['Dancing Script', 'cursivo'],
+        Hind: ['Hind', 'sans-serif'],
+        Lora: ['Lora', 'serif'],
+        Montserrat: ['Montserrat', 'sans-serif'],
+        Nunito: ['Nunito Sans', 'sans-serif']
       },
       colors: {
         'whiteBG': '#e0e0e0',
@@ -19,7 +23,7 @@ module.exports = {
         'shadowTL': '10px 10px 20px #cbced1, -10px -10px 20px #ffffff',
         'buttonShadow': '5px 5px 10px #b1b1b1, -5px -5px 10px 1px #ffffff',
         'imageShadow': '1px 1px 10px #9955ff, -1px -1px 10px #9955ff',
-        'darkShadow': '1px 1px 10px 1px #9910ff, -1px -1px 10px 1px #9910ff'
+        'darkShadow': '1px 1px 5px 1px #9910ff, -1px -1px 10px 1px #9910ff'
       },
     },
   },
