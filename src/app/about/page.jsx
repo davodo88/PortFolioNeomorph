@@ -7,28 +7,30 @@ import SkillsBox from '../components/atoms/skillsBox'
 
 const About = () => {
   return (
-    <section className='flex flex-col w-full h-full px-4 py-24 gap-5 justify-center items-center bg-whiteBG dark:bg-gray-800 dark:text-whiteBG '>
-      <div className='flex justify-around w-full h-max'>
-        <div className='flex md:order-2 w-1/2'>
+    <section className='flex flex-col gap-y-14 w-full h-full bg-whiteBG dark:bg-gray-900 py-32 dark:text-whiteBG my-auto'>
+      <div className='flex flex-col gap-y-10 md:flex-row justify-center items-center w-full h-max p-8'>
+        <div className='flex md:order-2 w-full h-max'>
           <Image src={David} width={'full'} height={'full'} alt='profile photo'
             className='rounded object-fit flex'
           />
         </div>
-        <div className='flex flex-col bg-whiteBG dark:bg-gray-800 w-max h-1/2 md:h-full m-auto p-6 gap-y-2 '>
-          <h1 className='flex capitalize font-bold font-Nunito text-5xl justify-center'>
+        <div className='flex flex-col justify-center items-center bg-whiteBG dark:bg-gray-900 w-full h-max md:h-full p-6 gap-y-2'>
+          <h1 className='flex items-center justify-center text-center w-full capitalize font-bold font-Nunito text-5xl'>
             david sanchez
           </h1>
-          <h3 className='flex justify-center font-semibold font-Nunito text-[#b893f0] text-2xl'>Junior Front-End Developer</h3>
-          <p className='flex px-4 font-Nunito justify-center'>
+          <h3 className='flex justify-center items-center text-center w-full font-semibold font-Nunito text-[#8364E8] text-2xl'>Junior Front-End Developer</h3>
+          <p className='flex w-full md:w-2/3 mt-8 px-4 font-Nunito justify-center items-center text-center text-gray-600 dark:text-gray-300'>
             Hi, I'm David! I really want to learn and improve day by day. Lover of technologies and good work.
           </p>
         </div>
       </div>
       <div className='w-full h-max flex flex-col p-4 rounded text-center font-DancingScript gap-y-5'>
-        <h1 className='font-DancingScript font-bold text-xl text-[#b893f0]'>My Skills</h1>
+        <h1 className='font-DancingScript w-32 h-10 font-bold text-xl text-[#8364E8] m-auto'>
+          My Skills
+        </h1>
         <SkillsBox />
       </div>
-    </section >
+    </section>
   )
 }
 

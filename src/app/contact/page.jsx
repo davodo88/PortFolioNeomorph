@@ -3,11 +3,14 @@ import Form from '../components/formContact'
 
 const ContactPage = () => {
   return (
-    <div className='flex flex-col w-screen h-screen px-4 py-28 bg-zinc-300 dark:bg-gray-800  items-center m-auto'>
-      <h1 className="text-3xl font-Hind flex w-max capitalize text-center text-[#9f6ee9] font-bold my-10">
-        Do You Have Any Idea? <br /> please tell me here..
+    <div className='w-full h-full flex flex-col justify-center items-center bg-zinc-300 pt-28 dark:bg-gray-900 '>
+      <h1 className="flex w-2/3 px-4 justify-center text-center text-3xl text-[#8364E8] font-bold capitalize ">
+        Do You Have Any Idea?
+        please contact me..
       </h1>
-      <Form />
+      <div className='flex justify-center items-center w-full px-4'>
+        <Form />
+      </div>
     </div>
   )
 }

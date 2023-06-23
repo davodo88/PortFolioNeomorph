@@ -14,8 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative flex-col items-center h-max  justify-center bg-whiteBG dark:bg-gray-800 ">
-        <div className="absolute bottom-5 left-[1/2] md:left-10">
+      <body className="relative flex flex-col items-center h-full w-screen justify-center bg-zinc-300 dark:bg-gray-900 ">
+        <div className="fixed z-10 bottom-5 left-[1/2] md:left-10">
           <DarkModeButton />
         </div>
         <span>
@@ -27,10 +27,10 @@ export default function RootLayout({ children }) {
             className="absolute top-8 right-8"
           />
         </span>
-        <section className="flex justify-center items-stretch w-full h-max md:absolute md:top-0 ">
+        <section className="flex w-full h-max absolute top-0 ">
           <Menu />
         </section>
-        <section className="flex flex-col justify-center items-center h-max w-full ">
+        <section className="flex justify-center  items-center h-full w-full">
           {children}
         </section>
       </body>
