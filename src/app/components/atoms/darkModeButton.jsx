@@ -37,15 +37,15 @@ const DarkModeButton = () => {
 
   return (
     <>
-      <div className='flex mx-auto w-32 h-8 justify-around items-center transition-transform duration-500 '>
+      <div className='flex mx-auto w-16  h-6 justify-around items-center transition-transform duration-500 '>
 
         <button onClick={() => setDarkMode(!darkMode)}
-          className={classNames('w-[50px] h-7  rounded-full  shadow-buttonShadow dark:shadow-none', darkMode ?
-            'bg-gradient-to-r from-[#8364E8] to-[#653ee7]' : 'bg-gradient-to-r from-gray-400 to-gray-300')}
+          className={classNames('w-full h-full  rounded-full  shadow-buttonShadow dark:shadow-darkShadow', darkMode ?
+            'bg-gradient-to-r from-[#427eaf] to-[#2f4e6b]' : 'bg-gradient-to-r from-gray-400 to-gray-300')}
         >
-          <div className={classNames('flex w-full h-6 my-auto transition-all duration-500',
-            darkMode ? 'translate-x-1/2' : 'justify-start')}>
-            <span className={classNames('transition-all duration-500 w-1/2 h-6  rounded-full ', darkMode ?
+          <div className={classNames('flex w-full h-6 my-auto transition-all  duration-500',
+            darkMode ? 'translate-x-9' : 'translate-x-1')}>
+            <span className={classNames('transition-all duration-500 w-5 h-5 rounded-full my-auto', darkMode ?
               'bg-gray-300/75' : 'bg-white  ')}
             >
             </span>

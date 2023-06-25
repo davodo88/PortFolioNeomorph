@@ -22,8 +22,15 @@ module.exports = {
         'lightTL': 'inset 10px 10px 20px #cbced1, inset -10px -10px 20px #ffffff',
         'shadowTL': '10px 10px 20px #cbced1, -10px -10px 20px #ffffff',
         'buttonShadow': '5px 5px 10px #b1b1b1, -5px -5px 10px 1px #ffffff',
-        'imageShadow': '1px 1px 10px #9955ff, -1px -1px 10px #9955ff',
-        'darkShadow': '1px 1px 5px 1px #9910ff, -1px -1px 10px 1px #9910ff'
+
+
+        //dark outside button
+        'darkTL': 'inset 3px 3px 3px #555555, inset -3px -3px 3px #1b1b1b',
+        // dark sadow inset buena 
+        'darkShadow': 'inset 3px 3px 5px #1b1b1b, inset -3px -3px 5px #555555',
+        //shadow dark socialBox
+        'shadowSocial': 'inset 3px 3px 3px #e5e7eb, inset -3px -3px 3px #4b5563',
+        'darkOutline': '-12px - 12px 12px 10px #ffffff, 12px 12px 12px 0 #ffffff'
       },
     },
   },

@@ -26,8 +26,8 @@ const SocialBox = () => {
         rrss.map((red, index) => {
           return (
             <button key={index}
-              className='p-2 shadow-buttonShadow bg-gray-300 dark:bg-zinc-400 hover:scale-125
-              transition-all duration-300 rounded dark:shadow-none  dark:border-[#b893f0] dark:text-[#b893f0]'>
+              className='p-2 shadow-buttonShadow bg-gray-300 dark:bg-gray-300 hover:scale-125
+              transition-all duration-300 rounded dark:shadow-shadowSocial'>
               <Link href={red.url}>
                 <Image src={red.icon}
                   width={20}

@@ -11,7 +11,7 @@ export default function Home() {
           <h1 className="font-bold text-5xl  text-black dark:text-gray-300 font-Nunito flex text-center ">
             DAVID SANCHEZ
           </h1>
-          <h3 className="text-[#8364E8] font-Nunito text-lg">
+          <h3 className="text-[#427eaf] font-Nunito text-lg">
             Front-End junior Developer
           </h3>
         </section>

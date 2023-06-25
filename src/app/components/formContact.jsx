@@ -4,7 +4,7 @@
 import React, { useState, useRef } from "react"
 import emailjs from '@emailjs/browser'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faAt, faPhone, faComment, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faAt, faPhone, faComment } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -42,12 +42,10 @@ const Form = () => {
         className="flex flex-col justify-center items-center gap-4 my-10 p-4 w-full h-full">
         <div className="flex flex-col w-full md:flex-row gap-4">
 
-          <div className="flex  w-full rounded shadow-buttonShadow dark:shadow-none dark:border-none dark:bg-gray-700">
-
-            <span className="w-10 h-10 flex justify-center items-center text-gray-500 dark:bg-gray-600  dark:border-none rounded bg-gray-400/25">
+          <div className="flex  w-full rounded shadow-buttonShadow dark:shadow-none">
+            <span className="w-10 h-10 flex justify-center items-center text-gray-400 dark:bg-gray-600 dark:shadow-darkTL dark:border-none rounded bg-gray-400/25">
               <FontAwesomeIcon icon={faUser} />
             </span>
-
             <input
               required
               type="text"
@@ -56,13 +54,13 @@ const Form = () => {
               value={name}
               placeholder="User name"
               onChange={(e) => setName(e.target.value)}
-              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Madurai text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-none"
+              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Nunito text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
             />
           </div>
 
-          <div className="flex  w-full rounded shadow-buttonShadow dark:shadow-none dark:border-none dark:bg-gray-700">
+          <div className="flex  w-full rounded shadow-buttonShadow dark:shadow-none dark:border-none ">
 
-            <span className="w-10 h-10 flex justify-center items-center text-gray-500 dark:bg-gray-600  dark:border-none rounded bg-gray-400/25">
+            <span className="w-10 h-10 flex justify-center items-center text-gray-400 dark:bg-gray-600  dark:border-none rounded bg-gray-400/25 dark:shadow-darkTL">
               <FontAwesomeIcon icon={faPhone} />
             </span>
 
@@ -75,12 +73,12 @@ const Form = () => {
               label='Contact Phone'
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Madurai text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-none "
+              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Nunito text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
             />
           </div>
         </div>
-        <div className="flex  w-full rounded shadow-buttonShadow dark:shadow-none dark:border-none dark:bg-gray-700">
-          <span className="w-10 h-10 flex justify-center items-center text-gray-500 dark:bg-gray-600  dark:border-none rounded bg-gray-400/25">
+        <div className="flex  w-full rounded shadow-buttonShadow dark:shadow-none dark:border-none">
+          <span className="w-10 h-10 flex justify-center items-center text-gray-400 dark:bg-gray-600  dark:border-none dark:shadow-darkTL rounded bg-gray-400/25">
             <FontAwesomeIcon icon={faAt} />
           </span>
           <input
@@ -91,11 +89,11 @@ const Form = () => {
             placeholder='User Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Madurai text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-none rounded"
+            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Nunito text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
           />
         </div>
-        <div className="flex  w-full rounded shadow-buttonShadow relative dark:shadow-none mb-10  dark:bg-gray-700">
-          <span className="w-10 h-auto flex justify-center items-start pt-3 text-gray-500 bg-gray-400/25 dark:bg-gray-600  dark:border-none rounded">
+        <div className="flex  w-full rounded shadow-buttonShadow relative dark:shadow-none mb-10 ">
+          <span className="w-10 h-auto flex justify-center items-start pt-3 text-gray-400 bg-gray-400/25 dark:bg-gray-600 dark:shadow-darkTL dark:border-none rounded">
             <FontAwesomeIcon icon={faComment} />
           </span>
           <textarea
@@ -103,12 +101,12 @@ const Form = () => {
             value={note} rows="4"
             placeholder='Your message..'
             onChange={(e) => setNote(e.target.value)}
-            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Madurai text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-none rounded"
+            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Nunito text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
             required />
           <button type="submit"
-            className="bg-[#8364E8] dark:bg-gray-700 dark:border-[1px]  dark:border-[#8364E8] rounded p-4 text-whiteBG dark:text-gray-400 shadow-buttonShadow dark:shadow-none flex justify-center items-center absolute -bottom-14 right-0 font-Madurai w-full md:w-20 h-10"
+            className="bg-[#427eaf] dark:bg-gray-800 dark:border-[1px]  dark:border-[#427eaf] rounded p-4 text-whiteBG dark:text-gray-400 shadow-buttonShadow dark:shadow-darkTL flex justify-center items-center absolute -bottom-14 right-0 font-Madurai w-full md:w-20 h-10"
           >
-            <span className="font-Nunito">Send</span>
+            <span className="font-Nunito">SEND</span>
           </button>
         </div>
       </form>
