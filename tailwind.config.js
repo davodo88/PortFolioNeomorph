@@ -8,11 +8,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        DancingScript: ['Dancing Script', 'cursivo'],
-        Hind: ['Hind', 'sans-serif'],
-        Lora: ['Lora', 'serif'],
-        Montserrat: ['Montserrat', 'sans-serif'],
-        Nunito: ['Nunito Sans', 'sans-serif']
+        Titillium: ['Titillium Web', 'cursivo'],
+        Quicksand: ['Quicksand', 'sans-serif'],
+        Acme: ['Acme', 'sans-serif'],
+        Kalam: ['Kalam', 'cursive'],
+        Permanent: ['Permanent Marker', 'cursive']
+
       },
       colors: {
         'whiteBG': '#e0e0e0',

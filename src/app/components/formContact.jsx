@@ -54,7 +54,7 @@ const Form = () => {
               value={name}
               placeholder="User name"
               onChange={(e) => setName(e.target.value)}
-              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Nunito text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
+              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Kalam text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
             />
           </div>
 
@@ -73,7 +73,7 @@ const Form = () => {
               label='Contact Phone'
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Nunito text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
+              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Kalam text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
             />
           </div>
         </div>
@@ -89,7 +89,7 @@ const Form = () => {
             placeholder='User Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Nunito text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
+            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Kalam text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
           />
         </div>
         <div className="flex  w-full rounded shadow-buttonShadow relative dark:shadow-none mb-10 ">
@@ -101,12 +101,12 @@ const Form = () => {
             value={note} rows="4"
             placeholder='Your message..'
             onChange={(e) => setNote(e.target.value)}
-            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Nunito text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
+            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Kalam text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
             required />
           <button type="submit"
-            className="bg-[#427eaf] dark:bg-gray-800 dark:border-[1px]  dark:border-[#427eaf] rounded p-4 text-whiteBG dark:text-gray-400 shadow-buttonShadow dark:shadow-darkTL flex justify-center items-center absolute -bottom-14 right-0 font-Madurai w-full md:w-20 h-10"
+            className="bg-[#427eaf] dark:bg-gray-800 dark:border-[1px]  dark:border-[#427eaf] rounded p-4 text-whiteBG dark:text-gray-400 shadow-buttonShadow dark:shadow-darkTL flex justify-center items-center absolute -bottom-14 right-0 w-full md:w-20 h-10"
           >
-            <span className="font-Nunito">SEND</span>
+            <span className="font-Permanent">SEND</span>
           </button>
         </div>
       </form>
