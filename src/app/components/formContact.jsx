@@ -42,8 +42,8 @@ const Form = () => {
         className="flex flex-col justify-center items-center gap-4 my-10 p-4 w-full h-full">
         <div className="flex flex-col w-full md:flex-row gap-4">
 
-          <div className="flex  w-full rounded shadow-buttonShadow dark:shadow-none">
-            <span className="w-10 h-10 flex justify-center items-center text-gray-400 dark:bg-gray-600 dark:shadow-darkTL dark:border-none rounded bg-gray-400/25">
+          <div className="flex gap-x-1 w-full rounded  dark:border-none">
+            <span className="w-10 h-10 flex justify-center items-center text-gray-400 dark:bg-gray-600  dark:border-none dark:shadow-darkTL rounded bg-gray-200 shadow-lightTL">
               <FontAwesomeIcon icon={faUser} />
             </span>
             <input
@@ -52,15 +52,15 @@ const Form = () => {
               name="from_name"
               label="name"
               value={name}
-              placeholder="User name"
+              placeholder="User Name"
               onChange={(e) => setName(e.target.value)}
-              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Kalam text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
+              className="shadow-lightinset py-2 px-4 rounded text-purpleWidow w-full font-Hind text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
             />
           </div>
 
-          <div className="flex  w-full rounded shadow-buttonShadow dark:shadow-none dark:border-none ">
+          <div className="flex gap-x-1 w-full rounded  dark:border-none">
 
-            <span className="w-10 h-10 flex justify-center items-center text-gray-400 dark:bg-gray-600  dark:border-none rounded bg-gray-400/25 dark:shadow-darkTL">
+            <span className="w-10 h-10 flex justify-center items-center text-gray-400 dark:bg-gray-600  dark:border-none dark:shadow-darkTL rounded bg-gray-200 shadow-lightTL">
               <FontAwesomeIcon icon={faPhone} />
             </span>
 
@@ -73,12 +73,12 @@ const Form = () => {
               label='Contact Phone'
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="shadow-lightTL py-2 px-4 rounded text-purpleWidow w-full font-Kalam text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
+              className="shadow-lightinset py-2 px-4 rounded text-purpleWidow w-full font-Hind text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
             />
           </div>
         </div>
-        <div className="flex  w-full rounded shadow-buttonShadow dark:shadow-none dark:border-none">
-          <span className="w-10 h-10 flex justify-center items-center text-gray-400 dark:bg-gray-600  dark:border-none dark:shadow-darkTL rounded bg-gray-400/25">
+        <div className="flex gap-x-1 w-full rounded  dark:border-none">
+          <span className="w-10 h-10 flex justify-center items-center text-gray-400 dark:bg-gray-600  dark:border-none dark:shadow-darkTL rounded bg-gray-200 shadow-lightTL">
             <FontAwesomeIcon icon={faAt} />
           </span>
           <input
@@ -89,24 +89,26 @@ const Form = () => {
             placeholder='User Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Kalam text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
+            className="shadow-lightinset py-2 px-4 text-purpleWidow w-full font-Hind text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
           />
         </div>
-        <div className="flex  w-full rounded shadow-buttonShadow relative dark:shadow-none mb-10 ">
-          <span className="w-10 h-auto flex justify-center items-start pt-3 text-gray-400 bg-gray-400/25 dark:bg-gray-600 dark:shadow-darkTL dark:border-none rounded">
-            <FontAwesomeIcon icon={faComment} />
-          </span>
-          <textarea
-            name="message"
-            value={note} rows="4"
-            placeholder='Your message..'
-            onChange={(e) => setNote(e.target.value)}
-            className="shadow-lightTL py-2 px-4 text-purpleWidow w-full font-Kalam text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
-            required />
+        <div className="flex flex-col gap-x-1 w-full rounded h-48 dark:border-none relative ">
+          <div className="flex gap-x-1">
+            <span className="w-10 h-auto flex justify-center items-start pt-3 text-gray-400 dark:bg-gray-600  dark:border-none dark:shadow-darkTL rounded bg-gray-200 shadow-lightTL">
+              <FontAwesomeIcon icon={faComment} />
+            </span>
+            <textarea
+              name="message"
+              value={note} rows="4"
+              placeholder='Your Message..'
+              onChange={(e) => setNote(e.target.value)}
+              className="shadow-lightinset py-2 px-4 text-purpleWidow w-full font-Hind text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
+              required />
+          </div>
           <button type="submit"
-            className="bg-[#427eaf] dark:bg-gray-800 dark:border-[1px]  dark:border-[#427eaf] rounded p-4 text-whiteBG dark:text-gray-400 shadow-buttonShadow dark:shadow-darkTL flex justify-center items-center absolute -bottom-14 right-0 w-full md:w-20 h-10"
+            className="flex w-full md:w-20 absolute bottom-3 items-center justify-center right-0 bg-[#427eaf] dark:bg-gray-800 dark:border-[1px]  dark:border-[#427eaf] rounded p-2 text-whiteBG dark:text-gray-400 shadow-buttonShadow dark:shadow-darkTL "
           >
-            <span className="font-Permanent">SEND</span>
+            <span className="font-Montserrat">SEND</span>
           </button>
         </div>
       </form>
