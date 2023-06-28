@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import David from '../../images/David.jpg'
+import David from '../../images/yo3.jpg'
 import SkillsBox from '../components/atoms/skillsBox'
 
 
