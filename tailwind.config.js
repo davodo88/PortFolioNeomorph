@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Montserrat: ['Montserrat Alternates', 'italic'],
-        Lora: ['Lora', 'serif'],
-        Hind: ['Hind Madurai', 'sans-serif']
+        'Montserrat': ['Montserrat Alternates', 'italic'],
+        'Lora': ['Lora', 'serif'],
+        'Hind': ['Hind Madurai', 'sans-serif']
       },
       colors: {
         'whiteBG': '#e0e0e0',

@@ -74,16 +74,14 @@ const NavBar = () => {
             </div>
           )}
           <DarkModeButton
-            className={classNames('',
-              menu ? '' : '')}
           />
         </div>
       </div>
       <div id="mdNavBar"
-        className={classNames('hidden md:flex  ', menu ? '' : '')}>
+        className={classNames('hidden md:flex', menu ? '' : '')}>
         <button onClick={handleNavbar}
           className="absolute top-10 left-8 z-50  transition-all duration-75 active:scale-105 
-          shadow-buttonShadow text-[#427eaf] dark:text-gray-500 rounded w-8 h-8 flex dark:bg-gray-700 justify-center items-center dark:shadow-darkTL dark:border-2  dark:border-[#427eaf]"
+          shadow-lightTL text-[#427eaf] dark:text-gray-500 rounded w-8 h-8 flex dark:bg-gray-700 justify-center items-center dark:shadow-darkTL dark:border-2  dark:border-[#427eaf]"
         >
           <span>
             <FontAwesomeIcon icon={
@@ -91,18 +89,20 @@ const NavBar = () => {
             } />
           </span>
         </button>
-        <ul className={classNames('hidden md:flex min-w-min w-[50%] gap-4 justify-around absolute top-0  p-4 left-[10%] transition-all ', menu ? 'opacity-0' : 'top-4')}>
+        <ul className={classNames('hidden md:flex min-w-min w-[50%] gap-4 justify-around absolute  top-0  p-4 left-[10%] transition-all ', menu ? 'opacity-0' : 'top-4')}>
           {nav.map((navs, index) => {
             return (
               <li key={index}
-                className="font-Lora flex justify-center items-center w-max py-2 px-4 rounded text-[#427eaf] shadow-buttonShadow bg-zinc-300  hover:scale-105 transition-all duration-150 dark:shadow-darkTL dark:bg-gray-700  dark:text-gray-400">
+                className="font-Lora flex justify-center items-center w-max py-2 px-4 rounded text-[#427eaf] dark:text-gray-400">
                 <Link href={navs.target}>
                   {navs.Title}
                 </Link>
               </li>
             )
           })}
-          <DarkModeButton />
+          <div className="absolute top-6 -right-12">
+            <DarkModeButton />
+          </div>
         </ul>
       </div>
     </section>
