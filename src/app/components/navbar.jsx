@@ -62,7 +62,7 @@ const NavBar = () => {
                       key={index}
                       className="px-8 py-2 text-center 
                       transition-all duration-300 hover:scale-105 
-                      text-[#427eaf] font-Tryker font-extrabold">
+                      text-[#427eaf] dark:text-gray-300 font-Tryker font-extrabold">
                       <Link href={navs.target}
                         className="flex justify-center ">
                         <span className="">
