@@ -9,10 +9,10 @@ const Card = ({ title, image, description }) => {
         <Image src={image} className='w-full h-full rounded-t' />
       </div>
       <div className='p-8 flex flex-col items-start justify-center'>
-        <h1 className='flex font-Montserrat mb-2 font-bold  text-[#427eaf] dark:text-gray-200 text-2xl'>
+        <h1 className='flex font-NewsCycle mb-2 font-bold  text-[#427eaf] dark:text-gray-200 text-3xl'>
           {title}
         </h1>
-        <h3 className='font-Lora font-light text-lg text-gray-500 dark:text-gray-400'>
+        <h3 className='font-Tryker font-light text-base text-gray-500 dark:text-gray-400'>
           {description}
         </h3>
       </div>

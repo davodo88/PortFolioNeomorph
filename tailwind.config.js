@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'Montserrat': ['Montserrat Alternates', 'italic'],
-        'Lora': ['Lora', 'serif'],
-        'Hind': ['Hind Madurai', 'sans-serif']
+
+        'Tryker': ['Trykker', 'serif'],
+        'NewsCycle': ['News Cycle', 'sans-serif']
       },
       colors: {
         'whiteBG': '#e0e0e0',

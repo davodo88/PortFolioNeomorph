@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="relative flex flex-col items-center h-full w-screen justify-center bg-zinc-300 dark:bg-gray-900 ">
-
         <span>
           <Image
             src={David}

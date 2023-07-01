@@ -62,10 +62,12 @@ const NavBar = () => {
                       key={index}
                       className="px-8 py-2 shadow-lightTL rounded text-center bg-gray-300
                       active:scale-105 transition-all duration-300 hover:scale-105 
-                      text-[#427eaf] focus:bg-purpleWidow dark:shadow-darkTL  dark:bg-gray-800    dark:text-gray-400">
+                      text-[#427eaf] focus:bg-purpleWidow dark:shadow-darkTL font-Tryker dark:bg-gray-800    dark:text-gray-400">
                       <Link href={navs.target}
-                        className="flex justify-center font-Lora">
-                        {navs.Title}
+                        className="flex justify-center ">
+                        <span className="">
+                          {navs.Title}
+                        </span>
                       </Link>
                     </button>
                   )
@@ -93,7 +95,7 @@ const NavBar = () => {
           {nav.map((navs, index) => {
             return (
               <li key={index}
-                className="font-Lora flex justify-center items-center w-max py-2 px-4 rounded text-[#427eaf] dark:text-gray-400">
+                className="font-Tryker flex justify-center items-center w-max py-2 px-4 rounded text-[#427eaf] dark:text-gray-400">
                 <Link href={navs.target}>
                   {navs.Title}
                 </Link>

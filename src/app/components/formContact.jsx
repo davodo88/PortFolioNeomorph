@@ -5,6 +5,8 @@ import React, { useState, useRef } from "react"
 import emailjs from '@emailjs/browser'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faAt, faPhone, faComment } from "@fortawesome/free-solid-svg-icons";
+import Swal from "sweetalert2"
+
 
 
 
@@ -25,6 +27,17 @@ const Form = () => {
       }, (error) => {
         console.log(error.text)
       })
+
+
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Thanks for contacting me. I will contact you soon',
+      showConfirmButton: true,
+      color: '##427eaf',
+      background: '#d1d5db',
+      backdrop: 'rgba(66,126,175,0.4)',
+    })
 
     console.log(name, email, phone, note)
     setName('')
@@ -54,7 +67,7 @@ const Form = () => {
               value={name}
               placeholder="User Name"
               onChange={(e) => setName(e.target.value)}
-              className="shadow-lightinset py-2 px-4 rounded text-purpleWidow w-full font-Hind text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
+              className="shadow-lightinset py-2 px-4 rounded text-[#427eaf] w-full font-Tryker font-semibold text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
             />
           </div>
 
@@ -73,7 +86,7 @@ const Form = () => {
               label='Contact Phone'
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="shadow-lightinset py-2 px-4 rounded text-purpleWidow w-full font-Hind text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
+              className="shadow-lightinset py-2 px-4 rounded text-[#427eaf] w-full font-Tryker font-semibold text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow"
             />
           </div>
         </div>
@@ -89,7 +102,7 @@ const Form = () => {
             placeholder='User Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="shadow-lightinset py-2 px-4 text-purpleWidow w-full font-Hind text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
+            className="shadow-lightinset py-2 px-4 text-[#427eaf] purpleWidow w-full font-Tryker font-semibold text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
           />
         </div>
         <div className="flex flex-col gap-x-1 w-full rounded h-48 dark:border-none relative ">
@@ -102,13 +115,13 @@ const Form = () => {
               value={note} rows="4"
               placeholder='Your Message..'
               onChange={(e) => setNote(e.target.value)}
-              className="shadow-lightinset py-2 px-4 text-purpleWidow w-full font-Hind text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
-              required />
+              className="shadow-lightinset py-2 px-4 text-[#427eaf] w-full font-Tryker font-semibold text-left focus:outline-none bg-whiteBG dark:bg-gray-700 dark:shadow-darkShadow rounded"
+            />
           </div>
           <button type="submit"
             className="flex w-full md:w-20 absolute bottom-3 items-center justify-center right-0 bg-[#427eaf] dark:bg-gray-800 dark:border-[1px]  dark:border-[#427eaf] rounded p-2 text-whiteBG dark:text-gray-400 shadow-buttonShadow dark:shadow-darkTL "
           >
-            <span className="font-Montserrat">SEND</span>
+            <span className="font-NewsCycle">SEND</span>
           </button>
         </div>
       </form>

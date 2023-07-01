@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/navbar.tsx", "src/app/components/atoms/imagePort.jsx", "src/app/layout.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/navbar.tsx", "src/app/components/atoms/imagePort.jsx", "src/app/layout.jsx", "src/app/page.jsx"],
   "exclude": ["node_modules"]
 }

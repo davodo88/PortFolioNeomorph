@@ -12,17 +12,17 @@ import Link from 'next/link'
 
 const template = [
   {
-    'title': 'Template1',
+    'title': 'LandingPage',
     'image': image1,
     'direction': 'https://template1-beta.vercel.app/',
     'description': 'Designer Architect template with React.js and Next.js'
   },
   {
-    'title': 'Template2', 'image': image2, 'direction': 'https://template-2-roan.vercel.app/',
+    'title': 'LandingPage', 'image': image2, 'direction': 'https://template-2-roan.vercel.app/',
     'description': 'Yoga saloon template with React.js and Next.js'
   },
   {
-    'title': 'Template3', 'image': image3, 'direction': 'https://template-3-beta.vercel.app/',
+    'title': 'LandingPage', 'image': image3, 'direction': 'https://template-3-beta.vercel.app/',
     'description': 'Pizzeria template with React.js and Next.js'
   },
   {
@@ -37,7 +37,7 @@ const Portfolio = () => {
     <section
       className='w-screen h-full gap-y-20 py-28 px-6 flex flex-col justify-around items-center'
     >
-      <h1 className='uppercase flex w-max m-auto text-3xl md:text-5xl text-[#427eaf] dark:text-gray-400 font-Montserrat font-bold'>
+      <h1 className='uppercase flex w-max m-auto text-3xl md:text-5xl text-[#427eaf] dark:text-gray-400 font-NewsCycle font-bold'>
         my projects
       </h1>
       <div className='grid md:grid-cols-2 gap-12 place-items-center'>
