@@ -49,7 +49,7 @@ const NavBar = () => {
       />
       <div id="mobileNavBar"
         className={classNames(
-          "absolute top-0 z-10 md:hidden transition-all duration-700 ease-in-out  bg-gray-500/20 dark:bg-whiteBG/20 backdrop-blur text-black rounded-br-xl flex items-center justify-center",
+          "absolute top-0 z-10 md:hidden transition-all duration-700 ease-in-out  bg-gray-500/20 dark:bg-whiteBG/20 backdrop-blur-lg text-black rounded-br-xl flex items-center justify-center",
           menu ? "left-0 h-screen w-full" : "-left-full  md:-left-[50%] h-screen w-screen")}
       >
         <div className="flex flex-col text-black gap-16 py-16 w-full px-5 md:hidden relative justify-center items-center">
@@ -60,9 +60,9 @@ const NavBar = () => {
                   return (
                     <button onClick={handleNavbar}
                       key={index}
-                      className="px-8 py-2 shadow-lightTL rounded text-center bg-gray-300
-                      active:scale-105 transition-all duration-300 hover:scale-105 
-                      text-[#427eaf] focus:bg-purpleWidow dark:shadow-darkTL font-Tryker dark:bg-gray-800    dark:text-gray-400">
+                      className="px-8 py-2 text-center 
+                      transition-all duration-300 hover:scale-105 
+                      text-[#427eaf] font-Tryker font-extrabold">
                       <Link href={navs.target}
                         className="flex justify-center ">
                         <span className="">
