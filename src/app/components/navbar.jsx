@@ -28,7 +28,7 @@ const nav = [
 const NavBar = () => {
 
 
-  const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(true)
 
 
   const handleNavbar = () => {

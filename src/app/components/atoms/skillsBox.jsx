@@ -8,6 +8,7 @@ import JS from '../../../images/JavaScriptLogo.png'
 import REACT from '../../../images/ReactLogo.png'
 import TAILWIND from '../../../images/TailwindLogo.png'
 import GitHub from '../../../../public/github.svg'
+import Next from '../../../images/next13.png'
 
 
 const skill = [
@@ -16,6 +17,7 @@ const skill = [
   { 'icon': JS, 'descrition': ' JavaScript' },
   { 'icon': REACT, 'descrition': 'React.JS' },
   { 'icon': TAILWIND, 'descrition': 'Tailwind' },
+  { 'icon': Next, 'descrition': 'Next 13' },
   { 'icon': GitHub, 'descrition': 'Git & GitHub' },
 ]
 
@@ -23,13 +25,13 @@ const skill = [
 const SkillsBox = () => {
 
   return (
-    <ul className='h-max w-full md:w-2/3 m-auto grid grid-rows-3 md:grid-cols-2 items-center md:items-left grid-flow-col py-4 gap-4'
+    <ul className='h-max w-full md:w-3/4 m-auto grid grid-rows-3 md:grid-cols-2 items-center md:items-left grid-flow-col py-4 gap-4'
     >
       {
         skill.map((red, index) => {
           return (
             <li key={index}
-              className='bg-gray-400/50  md:dark:bg-gray-700 rounded flex m-auto md:w-5/6 p-2 shadow-buttonShadow dark:shadow-none md:bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 md:dark:bg-gradient-to-r dark:from-gray-500 dark:via-gray-500/20 dark:to-gray-500'>
+              className='bg-gray-400/50  md:dark:bg-gray-700 rounded flex m-auto md:w-full p-2 shadow-buttonShadow dark:shadow-none md:bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 md:dark:bg-gradient-to-r dark:from-gray-500 dark:via-gray-500/20 dark:to-gray-500'>
               <Image
                 src={red.icon}
                 width={'auto'}
